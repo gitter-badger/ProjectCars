@@ -1,0 +1,22 @@
+{
+  "name": "cars",
+  "description": "cars project",
+  "main": "index.js",
+  "authors": [
+    "AlenaDmit"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "gulp",
+    "cars",
+    "example"
+  ],
+  "homepage": "https://github.com/AlenaDmit/GulpCompilerExample",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
