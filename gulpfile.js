@@ -1,8 +1,8 @@
 var destDir = "./build/";
 
-var gulp = require('gulp');
-var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
+var gulp = require('gulp'); // запуск галпа
+var autoprefixer = require('gulp-autoprefixer'); // расставление префиксов
+var concat = require('gulp-concat'); // сливает все файлы в один
 var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename');
 var clean = require('gulp-clean');
@@ -13,6 +13,7 @@ var uglify = require('gulp-uglify'); // Минификация скриптов
 var wiredep = require('gulp-wiredep');
 var useref = require('gulp-useref');
 var browserSync = require('browser-sync').create();
+
 
 // таска, запускаемая по дефолту после запуска команды gulp
 gulp.task('default', ['clean'], function() {
@@ -56,7 +57,6 @@ gulp.task('styles', function() {
 			})
 		}))
 		.pipe(sourcemaps.init()) 
-		// .pipe(sass()) //Компиляция sass.
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		}))
@@ -76,10 +76,11 @@ gulp.task('assets', function() {
 //доставляет файлы html в конечную папку
 gulp.task('html', function() {
 	gulp.src('src/*.html')
-		.pipe(wiredep({
-			directory: 'bower_components/'
-		}))
+		// .pipe(wiredep({
+		// 	directory: 'bower_components/'
+		// }))
 		.pipe(gulp.dest(destDir))
+		.pipe(sourcemaps.init())
 		.on('end', function() { // useref запускается после выполнения таски html
 			gulp.run('useref');
 		});
@@ -91,11 +92,15 @@ gulp.task('useref', function() {
 		.pipe(gulp.dest(destDir));
 });
 
-gulp.task('scripts', function() {
-	gulp.src('src/js/*.js')
-		.pipe(uglify())
-		.pipe(gulp.dest(destDir + '/js'));
+gulp.task("scripts", function () {
+    return gulp.src('src/js/*.js')
+        .pipe(sourcemaps.init())
+        .pipe(concat('scripts.js'))
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(destDir + '/js'));
 });
+
 
 //Задача для запуска сервера.
 gulp.task('browser-sync', function() {
