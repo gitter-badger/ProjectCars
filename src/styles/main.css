@@ -1,5 +1,26 @@
 .wrapper {
-	margin-left: 175px;
+	padding-left: 175px;
 	width: 785px;
 	height: auto;
+}
+
+.calc {
+  margin-bottom: 20px;
+}
+
+.calc > select {
+  padding: 10px;
+  width: 70px;
+  height: 40px;
+  border: 1px solid rgb(209, 219, 223);
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.old{
+  margin-right: 15px;
+}
+
+.new {
+  margin-right: 20px;
 }
