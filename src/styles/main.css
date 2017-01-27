@@ -21,14 +21,14 @@ body {
 }
 
 .calc {
-  margin-bottom: 22px;
+  margin: 0 0 22px 0;
 }
 
 .calc > select {
   padding: 8px 13px;
   border: 1px solid rgb(209, 219, 223);
   border-radius: 3px;
-  margin-right: 11px;
+  margin: 0 11px 0 0;
   width: 70px;
   font-family: 'ProximaNova-Light';
   font-size: 16px;
@@ -36,19 +36,16 @@ body {
   background-image: url('../images/arrow.png');
   background-repeat: no-repeat;
   background-position: 88% 50%;
-  /*for WebKit*/
  -webkit-appearance: none;
- /* for FF */
   -moz-appearance: none;
-  /* for IE */
   -ms-appearance: none;
   appearance: none!important;
 }
 
-.old{
-  margin-right: 11px;
+.old-size{
+  padding: 0 11px 0 0;
 }
 
-.new {
-  margin-right: 17px;
+.new-size {
+  padding: 0 17px 0 0;
 }
