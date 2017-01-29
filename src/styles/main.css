@@ -3,6 +3,13 @@
   src: url('../fonts/ProximaNova-Light.woff') format('woff'),
        url('../fonts/ProximaNova-Light.ttf') format('truetype')
 }
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../fonts/ProximaNova-Bold.woff') format('woff'),
+       url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+}
+
 html,
 body {
    margin: 0;
@@ -16,7 +23,7 @@ body {
 
 .wrapper {
 	padding: 0 0 0 169px;
-	width: 785px;
+	width: 790px;
 	height: auto;
 }
 
@@ -35,8 +42,7 @@ body {
   margin: 0 11px 0 0;
   width: 70px;
   height: 40px;
-  font-family: 'ProximaNova-Light';
-  font-size: 15px;
+  font-family: 15px 'ProximaNova-Light';
   color: #262626;
   background: url('../images/arrow.png') 88% 50% no-repeat;
  -webkit-appearance: none;
@@ -53,4 +59,51 @@ body {
 .new-size {
   padding: 0 24px 0 0;
   vertical-align: middle;
+}
+
+.block-name {
+  font: 18px 'ProximaNova-Bold';
+  display: inline-block;
+  margin: 0 0 7px 0;
+}
+
+.block-head_item {
+  list-style: none;
+  display: inline-block;
+  padding: 13px 17px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+ul.block-head {
+  padding: 0 10px 0 0;
+  margin: 15px 0px;
+  width: 774px;
+  display: block;
+  background-color: #2569d9;
+}
+
+.fallacy {
+  height: 22px;
+	width: 70px;
+  background: #ebebeb;
+  color: #464646;
+  font: 18px 'ProximaNova-Light';
+  text-align: right;
+  border: none;
+  margin: 9px 88px 0 18px;
+  padding: 5px 8px 5px 1px;
+}
+
+input:nth-of-type(2) {
+  margin-right: 62px;
+}
+
+input:last-of-type {
+  background-color: #d6e5ff;
+}
+
+*:focus {
+  outline: none;
 }
