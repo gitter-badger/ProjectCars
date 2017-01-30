@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'ProximaNova-Bold';
-    src: url('../assets/fonts/ProximaNova-Bold.woff');
+    src: url('../assets/fonts/ProximaNova-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'ProximaNova-Light';
-    src: url('../assets/fonts/ProximaNova-Light.woff');
+    src: url('../assets/fonts/ProximaNova-Light.woff') format('woff');
 }
 
 html, body {
@@ -13,30 +13,62 @@ html, body {
     padding: 0;
 }
 
+html {
+    font-size: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    html {
+        font-size: 60%;
+    }
+}
+
 header {
-    background: url("../assets/images/background.jpg") no-repeat top left / cover;
-    width: 100%;
-    height: 843px;
+    background: url("../assets/images/background.jpg")  no-repeat top left / cover;
+    min-height: 843px;
+}
+
+.container {
+    max-width: 1148px;
+    margin: 0 auto;
 }
 
 .logo__svg {
     margin: 26px 0 14px;
-    padding: 0 0 0 176px;
+    padding: 0 0 0 78px;
 }
 
 .title, .site-description {
-    padding: 0 0 0 175px;
+    padding: 0 0 0 78px;
     color: #fff;
 }
 
 .title {
-    font: 72px ProximaNova-Bold;
+    font: 4.5rem ProximaNova-Bold;
     text-transform: uppercase;
     max-width: 520px;
 }
 
 .site-description {
-    font: 16px/1.5 ProximaNova-Light;
+    font: 1rem/1.5 ProximaNova-Light;
     max-width: 490px;
 }
 
