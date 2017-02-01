@@ -44,20 +44,22 @@ html {
 header {
     background: url("../assets/images/background.jpg")  no-repeat top left / cover;
     min-height: 843px;
+    min-width: 320px;
 }
 
 .container {
     max-width: 1148px;
     margin: 0 auto;
+    width: 80%;
 }
 
 .logo__svg {
     margin: 26px 0 14px;
-    padding: 0 0 0 78px;
+    padding: 0;
 }
 
 .title, .site-description {
-    padding: 0 0 0 78px;
+    padding: 0;
     color: #fff;
 }
 
@@ -78,5 +80,5 @@ header {
     background: #2569d9;
     width: 84px;
     height: 10px;
-    margin: 55px 0 60px 0;
+    margin: 55px 0 60px;
 }
