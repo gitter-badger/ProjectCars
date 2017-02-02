@@ -14,43 +14,22 @@ html, body {
 }
 
 html {
-    font-size: 100%;
-}
-
-@media screen and (min-width: 1024px) {
-    html {
-        font-size: 100%;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    html {
-        font-size: 85%;
-    }
-}
-
-@media screen and (min-width: 420px) and (max-width: 768px) {
-    html {
-        font-size: 70%;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    html {
-        font-size: 60%;
-    }
+    font: 16px/1 ProximaNova-Light;
 }
 
 header {
-    background: url("../assets/images/background.jpg")  no-repeat top left / cover;
+    background: url("../assets/images/background.jpg")  no-repeat center / cover;
+
+    /*background: url("../assets/images/background.jpg")  no-repeat top left / cover;*/
+
     min-height: 843px;
-    min-width: 320px;
+    min-width: 500px;
 }
 
 .container {
     max-width: 1148px;
     margin: 0 auto;
-    width: 80%;
+    width: 74%;
 }
 
 .logo__svg {
@@ -81,4 +60,35 @@ header {
     width: 84px;
     height: 10px;
     margin: 55px 0 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .site-description {
+        font-size: 1.1rem;
+    }
+
+    .logo__svg {
+        width: 246px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+        max-width: 300px;
+    }
+
+    .site-description {
+        font-size: 1.2rem;
+    }
+
+    .logo__svg {
+        width: 197px;
+        height: 60px;
+    }
 }
