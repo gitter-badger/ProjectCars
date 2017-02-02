@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('../fonts/ProximaNova-Light.woff') format('woff'),
+       url('../fonts/ProximaNova-Light.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../fonts/ProximaNova-Bold.woff') format('woff'),
+       url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+}
+
+html,
+body {
+ margin: 0;
+ padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font: .9375rem 'ProximaNova-Light';
+  color: #464646;
+}
+
+.wrapper {
+	padding: 0 0 0 175px;
+	width: 790px;
+	height: auto;
+}
+
+.calculator {
+  margin: 0 0 60px;
+}
+
+.calc {
+  margin: 0 0 20px;
+}
+
+.calc > select {
+  padding: 11px 14px;
+  border: 1px solid rgb(209, 219, 223);
+  border-radius: 3px;
+  margin: 0 11px 0 0;
+  width: 70px;
+  height: 40px;
+  font: .9375rem 'ProximaNova-Light';
+  color: #262626;
+  background: url('../images/arrow.png') 88% 50% no-repeat;
+  appearance: none;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
+}
+
+.old-size {
+  padding: 0 13px 0 0;
+}
+.new-size {
+  padding: 0 18px 0 0;
+}
+
+.new-size,
+.old-size{
+  vertical-align: middle;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.fallacy-of-speedometer {
+  margin: 1px;
+}
+
+.block-name {
+  font: 1.125rem 'ProximaNova-Bold';
+  display: inline-block;
+  margin: 0 -1px 22px;
+}
+
+.speed-indicators {
+  width: 785px;
+  height: 41px;
+  background: #2569d9;
+  margin: 0 0 24px;
+}
+
+.block-head {
+  margin: 0;
+  padding: 0;
+}
+
+.block-head_item {
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  letter-spacing: .02rem;
+}
+
+ul.block-head li:first-child {
+  width: 160px;
+  padding: 10px 15px 6px 16px;
+}
+
+ul.block-head li:nth-child(2) {
+  width: 130px;
+  padding: 10px 15px 6px 12px;
+}
+
+ul.block-head li:nth-child(3) {
+  width: 55px;
+  padding: 10px 15px 6px 14px;
+}
+
+
+.fallacy {
+  height: 21px;
+  width: 71px;
+  background: #ebebeb;
+  color: #464646;
+  font: 1rem 'ProximaNova-Light';
+  line-height: 1.625rem;
+  text-align: right;
+  border: none;
+  margin: 0 106px 0 18px;
+  padding: 6px 8px 5px 0;
+  line-height: 1.5rem;
+  letter-spacing: .025rem;
+}
+
+input:nth-of-type(2) {
+  margin: 0 62px 0 0;
+}
+
+input:last-of-type {
+  background: #d6e5ff;
+}
+
+.fallacy-of-speedometer > input:focus,
+.calc >select:focus {
+  outline: none;
+}
+
+.fallacy-of-speedometer > input::-webkit-inner-spin-button,
+.fallacy-of-speedometer > input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
