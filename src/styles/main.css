@@ -1,17 +1,25 @@
-body{
-	font-family: "ProximaNovaRegular";
+body {
+	font: 16px/1 ProximaNovaRegular;
 }
 
-.container{
-
+.container {
+	max-width: 1148px;
+    margin: 0 auto;
+    width: 74%;
 }
 
-.main-block{
+@media screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.main-block {
 	min-width: 790px;
-	min-height: 390px;
+
 }
 
-.main-block__header{
+.main-block__header {
 	display: inline-block;
 	min-width: 790px;
 	line-height: 40px;
@@ -23,79 +31,69 @@ body{
 	box-sizing: border-box;
 }
 
-.main-block__header-item{
+@media screen and (max-width: 500px) {
+    .main-block__header .main-block__lr-wrap{
+        min-width: 500px;
+    }
+}
+
+.main-block__header-item {
 	min-width: 90px;
 	margin: 0 33px 0 0;
 	text-transform: uppercase;
 }
 
-.main-block__lr-wrap{
+.main-block__lr-wrap {
 	display: block;
 	padding: 0 15px;
 }
 
-.main-block__left{
+.main-block__left {
 	display: inline-block;
 	vertical-align: top;
 }
 
-.main-block__left-line{
+.main-block__left-line {
 	display: block;
-	margin: 0 0 20px 0;
+	margin: 0 0 17px 0;
 	line-height: 32px;
 	vertical-align: middle;
 }
 
-.main-block__left-name{
+.main-block__left-name {
 	display: inline-block;
 	min-height: 30px;
 	min-width: 80px;
-	margin: 0 20px 0 0;
+	margin: 0 17px 0 0;
 }
 
-.main-block__left-input{
+.main-block__left-input {
 	display: inline-block;
 	min-height: 30px;
 	max-width: 80px;
 	background: #ebebeb;
 	border: none;
-	margin: 0 20px 0 0;
+	margin: 0 17px 0 0;
 	padding: 0 5px;
 	box-sizing: border-box;
+	outline: none;
 }
 
- .main-block__left-input_blue{
+ .main-block__left-input_blue {
  	background: #d6e5ff;
  }
 
- .main-block__left-input_right{
- 	float: right;
+ .main-block__left-name._clearance {
+ 	min-width: 280px;
  }
 
-.main-block__right{
+.main-block__right {
 	display: inline-block;
 	vertical-align: top;
 }
 
-.main-block__right-img{
+.main-block__right-img {
 	background: url(/src/img/tire.png) no-repeat;
-	width: 380px;
-	height: 320px;
-}
-
-.down-block{
-
-}
-
-.down-block__name{
-	display: block;
-	margin: 0 0 20px 15px;
-}
-
-.down-block__line{
-	margin: 0 0 0 15px;
-}
-
-.down-block__line-input{
-	margin: 0 170px 0 0;
+	width: 350px;
+	height: 300px;
 }
