@@ -5,12 +5,12 @@ body {
 }
 
 body {
-	font: 16px/1 ProximaNovaRegular;
+	font: 16px/1 'ProximaNovaRegular';
   color: #464646;
 }
 
 header {
-    background: url("../assets/images/background.jpg")  no-repeat center / cover;
+    background: url("../img/background.jpg")  no-repeat center / cover;
     min-height: 843px;
     min-width: 500px;
 }
@@ -26,7 +26,8 @@ header {
     padding: 0;
 }
 
-.title, .site-description {
+.title,
+.site-description {
     padding: 0;
     color: #fff;
 }
@@ -50,7 +51,45 @@ header {
     height: 10px;
     margin: 55px 0 60px;
 }
+/*****************************************/
+.calculator {
+  margin: 0 0 60px -3px;
+  font-family:  'ProximaNovaLight';
+}
 
+.calc {
+  margin: 0 0 20px;
+}
+
+.calc > select {
+  padding: 11px 13px;
+  border: 1px solid rgb(209, 219, 223);
+  border-radius: 3px;
+  margin: 0 11px 0 0;
+  width: 70px;
+  height: 40px;
+  font: .9375rem 'ProximaNovaLight';
+  color: #262626;
+  background: url('../img/arrow.png') 88% 50% no-repeat;
+  appearance: none;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
+}
+
+.new-size,
+.old-size {
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+.old-size {
+  padding: 0 12px 0 1px;
+}
+.new-size {
+  padding: 0 17px 0 1px;
+}
+/****************************************/
 .main-block {
 	min-width: 790px;
 }
@@ -123,49 +162,11 @@ header {
 }
 
 .main-block__right-img {
-	background: url(/src/img/tire.png) no-repeat;
+	background: url(../img/tire.png) no-repeat;
 	width: 350px;
 	height: 300px;
 }
-
-.calculator {
-  margin: 0 0 60px -3px;
-  font-family:  'ProximaNovaLight';
-}
-
-.calc {
-  margin: 0 0 20px;
-}
-
-.calc > select {
-  padding: 11px 13px;
-  border: 1px solid rgb(209, 219, 223);
-  border-radius: 3px;
-  margin: 0 11px 0 0;
-  width: 70px;
-  height: 40px;
-  font: .9375rem 'ProximaNovaLight';
-  color: #262626;
-  background: url('../images/arrow.png') 88% 50% no-repeat;
-  appearance: none;
-  -webkit-appearance: none;
-   -moz-appearance: none;
-   -ms-appearance: none;
-}
-
-.old-size {
-  padding: 0 12px 0 1px;
-}
-.new-size {
-  padding: 0 17px 0 1px;
-}
-
-.new-size,
-.old-size{
-  vertical-align: middle;
-  font-size: 1rem;
-}
-
+/***************************************************/
 .fallacy-of-speedometer {
   font-family: 'ProximaNovaLight';
 }
@@ -219,7 +220,7 @@ ul.block-head li:nth-child(3) {
   width: 62px;
   background: #ebebeb;
   color: #464646;
-  font: 1rem 'ProximaNova-Light';
+  font: 1rem 'ProximaNovaLight';
   text-align: right;
   border: none;
   padding: 6px 8px 5px 9px;

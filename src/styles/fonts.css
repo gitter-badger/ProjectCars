@@ -15,19 +15,9 @@
 }
 
 @font-face {
-  font-family: 'ProximaNova-Light';
-  src: url('../fonts/ProximaNovaLight.woff') format('woff'),
-       url('../fonts/ProximaNovaLight.ttf') format('truetype');
+  font-family: 'ProximaNovaLight';
+  src: url('../fonts/ProximaNovaLight/ProximaNovaLight.woff') format('woff'),
+       url('../fonts/ProximaNovaLight/ProximaNovaLight.ttf') format('truetype');
        font-style: normal;
        font-weight: normal;
-}
-
-@font-face {
-    font-family: "ProximaNovaBlack";
-    src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot");
-    src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"),
-    url("../fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
 }
