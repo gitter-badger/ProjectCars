@@ -1,3 +1,110 @@
+html,
+body {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+	font: 16px/1 ProximaNovaRegular;
+  color: #464646;
+}
+
+.container {
+	max-width: 1148px;
+    margin: 0 auto;
+    width: 74%;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.main-block {
+	min-width: 790px;
+
+}
+
+.main-block__header {
+	display: inline-block;
+	min-width: 790px;
+	line-height: 40px;
+	vertical-align: middle;
+	background: #2569d9;
+	color: white;
+	margin: 0 0 25px 0;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px) {
+    .main-block__header .main-block__lr-wrap{
+        min-width: 500px;
+    }
+}
+
+.main-block__header-item {
+	min-width: 90px;
+	margin: 0 33px 0 0;
+	text-transform: uppercase;
+}
+
+.main-block__lr-wrap {
+	display: block;
+	padding: 0 15px;
+}
+
+.main-block__left {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.main-block__left-line {
+	display: block;
+	margin: 0 0 17px 0;
+	line-height: 32px;
+	vertical-align: middle;
+}
+
+.main-block__left-name {
+	display: inline-block;
+	min-height: 30px;
+	min-width: 80px;
+	margin: 0 17px 0 0;
+}
+
+.main-block__left-input {
+	display: inline-block;
+	min-height: 30px;
+	max-width: 80px;
+	background: #ebebeb;
+	border: none;
+	margin: 0 17px 0 0;
+	padding: 0 5px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+ .main-block__left-input_blue {
+ 	background: #d6e5ff;
+ }
+
+ .main-block__left-name._clearance {
+ 	min-width: 280px;
+ }
+
+.main-block__right {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.main-block__right-img {
+	background: url(/src/img/tire.png) no-repeat;
+	width: 350px;
+	height: 300px;
+}
+
 @font-face {
   font-family: 'ProximaNova-Light';
   src: url('../fonts/ProximaNova-Light.woff') format('woff'),
@@ -8,17 +115,6 @@
   font-family: 'ProximaNova-Bold';
   src: url('../fonts/ProximaNova-Bold.woff') format('woff'),
        url('../fonts/ProximaNova-Bold.ttf') format('truetype');
-}
-
-html,
-body {
- margin: 0;
- padding: 0;
-}
-
-body {
-  font: 16px/1;
-  color: #464646;
 }
 
 .wrapper {
