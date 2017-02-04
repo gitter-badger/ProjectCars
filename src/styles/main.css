@@ -63,15 +63,8 @@ header {
     margin: 55px 0 60px;
 }
 
-.container {
-	max-width: 1148px;
-    margin: 0 auto;
-    width: 74%;
-}
-
 .main-block {
 	min-width: 790px;
-
 }
 
 .main-block__header {
@@ -145,15 +138,6 @@ header {
 	background: url(/src/img/tire.png) no-repeat;
 	width: 350px;
 	height: 300px;
-}
-
-
-
-.wrapper {
-	width: 74%;
-  min-width: 500px;
-  margin: 0 auto;
-	height: auto;
 }
 
 .calculator {
@@ -309,17 +293,11 @@ ul.block-head li:nth-child(3) {
     }
 }
 
-@media (max-width: 580px) {
-  .wrapper {
-    margin: 0 10px;
-  }
-}
-
 @media screen and (max-width: 500px) {
     .container {
         width: 90%;
     }
-  
+
   .main-block__header .main-block__lr-wrap{
         min-width: 500px;
     }
