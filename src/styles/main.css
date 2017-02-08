@@ -291,3 +291,19 @@ ul.block-head li:nth-child(3) {
         min-width: 500px;
     }
 }
+
+.btn-count{
+	background-color:#272725;
+	color:#ffffff;
+	border-radius:4px;
+	transition:400ms;
+	height:44px;
+	width:115px;
+
+}
+
+.btn-count:hover{
+background-color:#2569d9;
+}
+
+
