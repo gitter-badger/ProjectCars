@@ -174,7 +174,7 @@ header {
 .block-name {
   font: 1.125rem 'ProximaNovaBold';
   display: inline-block;
-  margin: 67px -1px 22px;
+  margin: 67px 0 22px;
 }
 
 .blue-line {
@@ -182,7 +182,7 @@ header {
   min-width: 460px;
   height: 41px;
   background: #2569d9;
-  margin: 0 0 24px 0;
+  margin: 0 0 24px;
 }
 
 .block-head {
@@ -293,18 +293,17 @@ ul.block-head li:nth-child(3) {
 }
 
 .btn-count{
-	background-color:#272725;
-	color:#ffffff;
-	border-radius:4px;
-	transition:400ms;
-	height:52px;
-	width:140px;
-	border:1px;
-	margin-left:-17px;
-	margin-top:3px;
+	background: #272725;
+	color: #fff;
+	border-radius: 4px;
+	transition: 400ms;
+	height: 52px;
+	width: 140px;
+	border: 1px;
+	margin: 3px 0 0 -17px;
 }
 
 .btn-count:hover{
-background-color:#2569d9;
+background: #2569d9;
 }
 
