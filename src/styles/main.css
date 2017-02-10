@@ -78,7 +78,7 @@ body {
   margin: 57px 0 58px;
 }
 
-.calculator {
+.top-calculator {
   margin: 0 0 60px;
   font-family:  'ProximaNovaLight';
 }
@@ -120,7 +120,8 @@ body {
 	margin: 0 0 44px;
 }
 
-.blue-line {
+.main-block__header_blue-line,
+.bottom-calculator__header_blue-line {
   width: 78.5%;
   min-width: 500px;
   height: 41px;
@@ -128,47 +129,46 @@ body {
   margin: 0 0 24px;
 }
 
-
 .main-block__header {
-	line-height: 2.85;
 	padding: 0 15px;
 	box-sizing: border-box;
 }
 
-.main-block__header-item {
+.main-block__header_name,
+.bottom-calculator__header_name {
   display: inline-block;
   color: #fff;
   text-transform: uppercase;
   font-size: .75rem;
-  line-height: 2;
   letter-spacing: .02rem;
   width: 90px;
+  padding: 14px 0;
 }
 
-.main-block__header-item_sizes {
+.main-block__header_sizes {
   margin: 0 1px;
 }
 
-.main-block__header-item_new-size {
+.main-block__header_new-size {
   margin: 1px 2px;
 }
 
-.main-block__lr-wrap {
+.main-block__content {
 	display: block;
 }
 
-.main-block__left {
+.main-block__content_left {
 	display: inline-block;
   padding: 0 35px 0 15px;
   float: left;
 }
 
-.main-block__left-line {
+.main-block__content_line {
 	display: block;
 	margin: 0 0 13px 0;
 }
 
-.main-block__left-name {
+.main-block__line-name {
 	display: inline-block;
 	min-height: 30px;
 	min-width: 80px;
@@ -179,30 +179,40 @@ body {
 
 input {
   height: 21px;
-  width: 62px;
+  width: 63px;
   background: #ebebeb;
   color: #464646;
   font: 1rem 'ProximaNovaLight';
   text-align: right;
   border: none;
-  padding: 6px 8px 5px 9px;
+  padding: 5px 8px;
   letter-spacing: .1rem
 }
 
- .input_blue {
- 	background: #d6e5ff;
- }
-
-.main-block__left-input {
+.main-block__input {
   margin: 0px 12px 0px 0px;
 }
 
- .main-block__left-name._clearance {
+.bottom-calculator__input {
+  margin: 0 40px;
+}
+
+ .main-block__input_blue,
+ .bottom-calculator__input_blue {
+ 	background: #d6e5ff;
+ }
+
+ .bottom-calculator__input_indication {
+   margin: 0 65px 0 20px;
+ }
+
+
+ .main-block__line-name._clearance {
  	width: 270px;
   padding: 10px 2px 0px 0px;
  }
 
-.main-block__right {
+.main-block__content_right {
 	display: inline-block;
   margin: -3px 1px;
 }
@@ -213,43 +223,20 @@ input {
 	height: 310px;
 }
 
-.fallacy-of-speedometer {
+.bottom-calculator {
   font-family: 'ProximaNovaLight';
   margin: 0 0 100px;
 }
 
-.block-name {
-  font: 1.125rem 'ProximaNovaBold';
+.bottom-calculator_name {
   display: inline-block;
   margin: 0 0 21px;
+  font: 18px 'ProximaNovaBold'
 }
 
-.speed-fault-name__indication {
-  width: 160px;
-  padding: 10px 15px 6px 16px;
-}
-
-.speed-fault-name__real {
-  width: 130px;
-  padding: 10px 15px 6px 12px;
-}
-
-.speed-fault-name__difference {
-  width: 55px;
-  padding: 10px 15px 6px 14px;
-}
-
-.speed-fault-value__indication {
-  margin: 0 105px 0 19px;
-}
-
-.speed-fault-value__real {
-  margin: 0 62px 0 0;
-}
-
-.speed-fault-value__difference {
-  background: #d6e5ff;
-  margin: 0 0 0 18px;
+.bottom-calculator__header_name {
+  width: auto;
+  margin: 0 12px 0 16px;
 }
 
 input:focus,
@@ -291,13 +278,13 @@ input::-webkit-outer-spin-button {
       width: 197px;
       height: 60px;
     }
-    .header {
-      height: auto;
-      background-position: center;
-    }
+  .header {
+    height: auto;
+    background-position: center;
+  }
 
-    .site-description {
-      padding: 0 0 30px;
+  .site-description {
+    padding: 0 0 30px;
     }
   .container {
     width: 90%;
