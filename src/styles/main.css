@@ -292,7 +292,7 @@ ul.block-head li:nth-child(3) {
     }
 }
 
-.btn-count{
+.btn-count {
 	background: #272725;
 	color: #fff;
 	border-radius: 4px;
@@ -301,9 +301,11 @@ ul.block-head li:nth-child(3) {
 	width: 140px;
 	border: 1px;
 	margin: 3px 0 0 -17px;
+	text-transform: uppercase;
 }
 
-.btn-count:hover{
+.btn-count:hover {
 background: #2569d9;
+text-transform: uppercase;
 }
 
