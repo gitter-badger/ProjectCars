@@ -302,10 +302,13 @@ ul.block-head li:nth-child(3) {
 	border: 1px;
 	margin: 3px 0 0 -17px;
 	text-transform: uppercase;
+  font: 14px 'ProximaNovaBold';
+  letter-spacing: -0.045em;
 }
 
 .btn-count:hover {
 background: #2569d9;
 text-transform: uppercase;
+cursor: pointer;
 }
 
