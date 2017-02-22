@@ -72,9 +72,6 @@ header {
   color: #262626;
   background: url('../img/arrow.png') 88% 50% no-repeat;
   appearance: none;
-  -webkit-appearance: none;
-   -moz-appearance: none;
-   -ms-appearance: none;
 }
 
 .new-size,
