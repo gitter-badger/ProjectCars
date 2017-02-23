@@ -1,0 +1,24 @@
+{
+  "name": "cars",
+  "version": "1.0.0",
+  "description": "* HTML5\r * CSS3\r * JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebSpecialForces/ProjectCars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebSpecialForces/ProjectCars/issues"
+  },
+  "homepage": "https://github.com/WebSpecialForces/ProjectCars#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.4",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.3.0"
+  }
+}
