@@ -44,7 +44,7 @@ input::outer-spin-button {
   width: 74%;
 }
 
-.logo__svg {
+.logo__png {
   margin: 26px 0 14px;
   padding: 0;
 }
@@ -248,7 +248,7 @@ input::outer-spin-button {
     font-size: 3rem;
   }
 
-  .logo__svg {
+  .logo__png {
     width: 246px;
     height: 75px;
   }
@@ -269,7 +269,7 @@ input::outer-spin-button {
     max-width: 300px;
   }
   
-  .logo__svg {
+  .logo__png {
     width: 197px;
     height: 60px;
     }
