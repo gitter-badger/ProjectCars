@@ -8,7 +8,7 @@ gulp.task('styles', function() {
   return gulp.src('./src/styles/*.css')
     .pipe(sourcemaps.init())
     .pipe(concat('all.css'))
-    .pipe(postcss([autoprefixer]))
+    .pipe(postcss([autoprefixer({})]))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./build/styles'))
 });
