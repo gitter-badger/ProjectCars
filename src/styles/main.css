@@ -1,11 +1,11 @@
 html,
 body {
- margin: 0;
- padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font: 100% 'ProximaNovaRegular';
+  font: 100% 'ProximaNovaRegular';
   color: #464646;
   min-width: 680px;
 }
@@ -28,7 +28,7 @@ select:focus {
 }
 
 input[type='number'] {
-appearance: none;
+  appearance: none;
 }
 
 .header {
@@ -98,7 +98,7 @@ appearance: none;
 }
 
 .top-calculator__select::-ms-expand {
-display: none;
+  display: none;
 }
 
 .top-calculator__row_old-size,
@@ -134,13 +134,13 @@ display: none;
   padding: 14px 0;
 }
 
- .clearance-calculator__input_blue,
- .bottom-calculator__input_blue {
- 	background: #d6e5ff;
+.clearance-calculator__input_blue,
+.bottom-calculator__input_blue {
+  background: #d6e5ff;
  }
 
 .clearance-calculator {
-	margin: 0 0 44px;
+  margin: 0 0 44px;
 }
 
 .clearance-calculator__header_name {
@@ -152,18 +152,18 @@ display: none;
 }
 
 .clearance-calculator__content {
-	display: block;
+  display: block;
 }
 
 .clearance-calculator__content_left {
-	display: inline-block;
+  display: inline-block;
   margin: 0 34px 0 15px;
   vertical-align: top;
 }
 
 .clearance-calculator__line {
-	display: block;
-	margin: 0 0 13px;
+  display: block;
+  margin: 0 0 13px;
 }
 
 .clearance-calculator__line:nth-child(5) {
@@ -171,11 +171,11 @@ display: none;
 }
 
 .clearance-calculator__line-name {
-	display: inline-block;
-	min-height: 30px;
-	min-width: 80px;
+  display: inline-block;
+  min-height: 30px;
+  min-width: 80px;
   vertical-align: top;
-	margin: 0 13px 0 0;
+  margin: 0 13px 0 0;
   padding: 8px 0 0;
 }
 
@@ -183,33 +183,33 @@ display: none;
   margin: 0 12px 0 0;
 }
 
- .clearance-calculator__clearance-changes {
- 	width: 270px;
+.clearance-calculator__clearance-changes {
+  width: 270px;
   padding: 10px 0;
- }
+}
 
 .clearance-calculator__content_right {
-	display: inline-block;
+  display: inline-block;
   margin: -3px 0;
 }
 
 .clearance-calculator__right-img {
-	background: resolve(tire.png);
+  background: resolve(tire.png);
   background-repeat: no-repeat;
-	width: 345px;
-	height: 310px;
+  width: 345px;
+  height: 310px;
 }
 
 .btn {
-	background: #272725;
-	color: #fff;
-	border-radius: 3px;
-	transition: 400ms;
-	height: 52px;
-	width: 140px;
-	border: 1px;
-	margin: 3px 0 0;
-	text-transform: uppercase;
+  background: #272725;
+  color: #fff;
+  border-radius: 3px;
+  transition: 400ms;
+  height: 52px;
+  width: 140px;
+  border: 1px;
+  margin: 3px 0 0;
+  text-transform: uppercase;
   font: 14px 'ProximaNovaBold';
   outline: none;
 }

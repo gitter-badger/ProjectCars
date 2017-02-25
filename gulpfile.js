@@ -19,18 +19,25 @@ var plugins = [
       }),
       nested(),
       short(),
-      stylelint({
-        "extends": "stylelint-config-standard",
-        "rules": {
-          "indentation": ["tab", {"indentInsideParens": "once-at-root-twice-in-block"}],
-          "declaration-colon-newline-after": [{"string": "always-multi-line"}]
-        }
-      }),
-      reporter()
-  ];
+];
+
+var lint = [
+  stylelint({
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "indentation": [2, {
+        "ignore": ["value"],
+        "indentInsideParens": "once-at-root-twice-in-block"
+      }]
+    }
+  }),
+  reporter()
+]
+
 
 gulp.task('styles', function() {
   return gulp.src('./src/styles/*.css')
+    .pipe(postcss(lint))
     .pipe(sourcemaps.init())
     .pipe(concat('all.css'))
     .pipe(postcss(plugins))
