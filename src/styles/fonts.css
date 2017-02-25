@@ -1,15 +1,15 @@
 @font-face {
     font-family: "ProximaNovaRegular";
-    src:  resolve("ProximaNovaRegular.woff") format("woff"),
-          resolve("ProximaNovaRegular.ttf") format("truetype");
+    src: resolve("ProximaNovaRegular.woff") format("woff"),
+         resolve("ProximaNovaRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "ProximaNovaBold";
-    src:  resolve("ProximaNovaBold.woff") format("woff"),
-          resolve("ProximaNovaBold.ttf") format("truetype");
+    src: resolve("ProximaNovaBold.woff") format("woff"),
+         resolve("ProximaNovaBold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }

@@ -7,7 +7,8 @@ var assets = require('postcss-assets');
 var nested = require('postcss-nested');
 var short = require('postcss-short');
 var stylelint = require('stylelint');
-var reporter = require('postcss-reporter');
+var reporter = require('postcss-browser-reporter');
+var stylelintConfigStandard = require('stylelint-config-standard');
 
 var plugins = [
       autoprefixer({
@@ -17,7 +18,15 @@ var plugins = [
        loadPaths: ['src/img/', 'src/fonts/ProximaNovaBold', 'src/fonts/ProximaNovaLight', 'src/fonts/ProximaNovaRegular']
       }),
       nested(),
-      short()
+      short(),
+      stylelint({
+        "extends": "stylelint-config-standard",
+        "rules": {
+          "indentation": ["tab", {"indentInsideParens": "once-at-root-twice-in-block"}],
+          "declaration-colon-newline-after": [{"string": "always-multi-line"}]
+        }
+      }),
+      reporter()
   ];
 
 gulp.task('styles', function() {

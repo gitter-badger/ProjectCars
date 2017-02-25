@@ -163,7 +163,7 @@ display: none;
 
 .clearance-calculator__line {
 	display: block;
-	margin: 0 0 13px 0;
+	margin: 0 0 13px;
 }
 
 .clearance-calculator__line:nth-child(5) {
