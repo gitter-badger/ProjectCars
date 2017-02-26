@@ -1,0 +1,13 @@
+module.exports = {
+		"extends": "stylelint-config-standard",
+  "rules": {
+    "indentation": "tab",
+    "number-leading-zero": null,
+    "property-no-unknown": [ true, {
+      "ignoreProperties": [
+        "composes"
+      ]
+    }],
+    "unit-whitelist": ["em", "rem", "s"]
+    }
+}
