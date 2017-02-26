@@ -23,12 +23,7 @@ var plugins = [
 var lint = [
   stylelint({
     "extends": "stylelint-config-standard",
-    "rules": {
-      "indentation": [2, {
-        "ignore": ["value"],
-        "indentInsideParens": "twice"
-      }]
-    }
+    "rules": {}
   }),
   reporter()
 ]
