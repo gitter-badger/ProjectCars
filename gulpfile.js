@@ -8,7 +8,6 @@ var nested = require('postcss-nested');
 var short = require('postcss-short');
 var stylelint = require('stylelint');
 var reporter = require('postcss-browser-reporter');
-var stylelintConfigStandard = require('stylelint-config-standard');
 
 var plugins = [
       autoprefixer({
@@ -27,7 +26,7 @@ var lint = [
     "rules": {
       "indentation": [2, {
         "ignore": ["value"],
-        "indentInsideParens": "once-at-root-twice-in-block"
+        "indentInsideParens": "twice"
       }]
     }
   }),
