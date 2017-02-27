@@ -75,7 +75,7 @@ input[type='number'] {
   width: 84px;
   height: 10px;
   margin: 57px 0 58px;
-  }
+}
 
 .top-calculator {
   margin: 0 0 60px;
@@ -242,7 +242,7 @@ input[type='number'] {
   }
 
   &__input_indication {
-   margin: 0 65px 0 20px; 
+    margin: 0 65px 0 20px;
   }
 }
 
