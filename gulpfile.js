@@ -5,7 +5,6 @@ var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var handlebars = require('gulp-compile-handlebars');
 
-
 gulp.task('styles', function() {
   return gulp.src('./src/styles/*.css')
     .pipe(sourcemaps.init())
@@ -25,6 +24,7 @@ gulp.task('handlebars', function () {
 	var options = {
 		batch : ['./src/partials/']
 	};
+	
 	return gulp.src('./src/index.hbs')
 		.pipe(handlebars({}, options))
 		.pipe(rename('index2.html'))
