@@ -11,8 +11,7 @@ body {
 }
 
 input {
-  height: 21px;
-  width: 63px;
+  size: 63px 21px;
   background: #ebebeb;
   color: #464646;
   font: 1rem 'ProximaNovaLight';
@@ -33,14 +32,14 @@ input[type='number'] {
 
 .header {
   background: resolve(background.jpg) no-repeat 0% 50% / cover;
-  height: 843px;
+  size: * 843px;
   margin: 0 0 5%;
 }
 
 .container {
   max-width: 1148px;
   margin: 0 auto;
-  width: 74%;
+  size: 74% *;
 }
 
 .logo {
@@ -72,8 +71,7 @@ input[type='number'] {
   display: block;
   content: '';
   background: #2569d9;
-  width: 84px;
-  height: 10px;
+  size: 84px 10px;
   margin: 57px 0 58px;
 }
 
@@ -90,8 +88,7 @@ input[type='number'] {
     border: 1px solid rgb(209, 219, 223);
     border-radius: 3px;
     margin: 0 11px 0 0;
-    width: 70px;
-    height: 40px;
+    size: 70px 40px;
     font: 0.9375rem 'ProximaNovaLight';
     color: #262626;
     background: resolve(arrow.png) 88% 50% no-repeat;
@@ -116,12 +113,9 @@ input[type='number'] {
   }
 }
 
-/* clearance-calculator and bottom-calculator same styles */
-
 .clearance-calculator__header_blue-line,
 .bottom-calculator__header_blue-line {
-  width: 785px;
-  height: 41px;
+  size: 785px 41px;
   background: #2569d9;
   margin: 0 0 24px;
 }
@@ -145,7 +139,7 @@ input[type='number'] {
   margin: 0 0 44px;
 
   &__header_name {
-    width: 92px;
+    size: 92px *;
   }
 
   &__header_sizes {
@@ -197,8 +191,7 @@ input[type='number'] {
   &__right-img {
     background: resolve(tire.png);
     background-repeat: no-repeat;
-    width: 345px;
-    height: 310px;
+    size: 345px 310px;
   }
 }
 
@@ -207,8 +200,7 @@ input[type='number'] {
   color: #fff;
   border-radius: 3px;
   transition: 400ms;
-  height: 52px;
-  width: 140px;
+  size: 140px 52px;
   border: 1px;
   margin: 3px 0 0;
   text-transform: uppercase;
