@@ -14,7 +14,10 @@ var plugins = [
         browsers: ['last 2 versions', '> 2%']
       }),
       assets({
-       loadPaths: ['src/img/', 'src/fonts/ProximaNovaBold', 'src/fonts/ProximaNovaLight', 'src/fonts/ProximaNovaRegular']
+       loadPaths: ['src/img/',
+        'src/fonts/ProximaNovaBold',
+        'src/fonts/ProximaNovaLight',
+        'src/fonts/ProximaNovaRegular']
       }),
       nested(),
       short(),
