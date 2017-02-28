@@ -100,7 +100,7 @@ input[type='number'] {
   }
 
   &__row_old-size,
-  &__row_new-size {
+&__row_new-size {
     vertical-align: middle;
   }
 

@@ -22,7 +22,7 @@ var lint = [
   nested(),
   stylelint({
     "extends": "stylelint-config-standard",
-    "rules": {"indentation": 4}
+    "rules": {}
   }),
   reporter(),
   short()
