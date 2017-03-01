@@ -93,7 +93,7 @@ input [type='number'] {
     color: #262626;
     background: resolve(arrow.png) 88% 50% no-repeat;
     appearance: none;
-    }
+  }
 
   &__select::-ms-expand {
     display: none;
@@ -200,12 +200,12 @@ input [type='number'] {
   color: #fff;
   border-radius: 3px;
   transition: 400ms;
-  size: 140px 52px;
   border: 1px;
   margin: 3px 0 0;
   text-transform: uppercase;
   font: 14px 'ProximaNovaBold';
   outline: none;
+  size: 140px 52px;
 }
 
 .btn:hover {

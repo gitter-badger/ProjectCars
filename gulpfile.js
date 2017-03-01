@@ -25,7 +25,7 @@ var lint = [
       }),
   reporter(),
   nested(),
-  short()
+  short() 
 ]
 
 gulp.task('styles', function() {
