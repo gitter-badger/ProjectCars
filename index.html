@@ -31,7 +31,7 @@
           <option class="top-calculator__select-option_old-width" value="195">195</option>
         </select>
 
-        <select id="oldHeightSelect" class="top-calculator__select  top-calculator__select_old-height" name="old-height">
+        <select id="oldSidewallSelect" class="top-calculator__select  top-calculator__select_old-height" name="old-height">
           <option class="top-calculator__select-option_old-height" value="70">70</option>
           <option class="top-calculator__select-option_old-height" value="65">65</option>
           <option class="top-calculator__select-option_old-height" value="60">60</option>
@@ -52,7 +52,7 @@
           <option class="top-calculator__select-option_new-width" value="195">195</option>
         </select>
 
-        <select id="newHeightSelect" class="top-calculator__select  top-calculator__select_new-height" name="new-height">
+        <select id="newSidewallSelect" class="top-calculator__select  top-calculator__select_new-height" name="new-height">
           <option class="top-calculator__select-option_new-height" value="70">70</option>
           <option class="top-calculator__select-option_new-height" value="65">65</option>
           <option class="top-calculator__select-option_new-height" value="60">60</option>
@@ -78,35 +78,35 @@
         <div class="clearance-calculator__content_left">
           <div class="clearance-calculator__line">
             <span class="clearance-calculator__line-name">p (мм)</span>
-            <input id="oldWidthOutput" class="clearance-calculator__input" type="text" readonly="readonly">
-            <input id="newWidthOutput" class="clearance-calculator__input" type="text" readonly="readonly">
-            <input id="differenceWidthOutput" class="clearance-calculator__input  clearance-calculator__input_blue" type="text" readonly="readonly">
+            <input id="oldWidth" class="clearance-calculator__input" type="number" readonly="readonly">
+            <input id="newWidth" class="clearance-calculator__input" type="number" readonly="readonly">
+            <input id="differenceWidth" class="clearance-calculator__input  clearance-calculator__input_blue" type="number" readonly="readonly">
           </div>
 
           <div class="clearance-calculator__line">
             <span class="clearance-calculator__line-name">с (мм)</span>
-            <input id="oldInnerDiameterOutput" class="clearance-calculator__input" type="text" readonly="readonly">
-            <input id="newInnerDiameterOutput" class="clearance-calculator__input" type="text" readonly="readonly">
-            <input id="differenceInnerDiameterOutput" class="clearance-calculator__input  clearance-calculator__input_blue" type="text" readonly="readonly">
+            <input id="oldInnerDiameter" class="clearance-calculator__input" type="number" readonly="readonly">
+            <input id="newInnerDiameter" class="clearance-calculator__input" type="number" readonly="readonly">
+            <input id="differenceInnerDiameter" class="clearance-calculator__input  clearance-calculator__input_blue" type="number" readonly="readonly">
           </div>
 
           <div class="clearance-calculator__line">
             <span class="clearance-calculator__line-name">d (мм)</span>
-            <input id="oldOuterDiameterOutput" class="clearance-calculator__input" type="text" readonly="readonly">
-            <input id="newOuterDiameterOutput" class="clearance-calculator__input" type="text" readonly="readonly">
-            <input id="differenceOuterDiameterOutput" class="clearance-calculator__input  clearance-calculator__input_blue" type="text" readonly="readonly">
+            <input id="oldOuterDiameter" class="clearance-calculator__input" type="number" readonly="readonly">
+            <input id="newOuterDiameter" class="clearance-calculator__input" type="number" readonly="readonly">
+            <input id="differenceOuterDiameter" class="clearance-calculator__input  clearance-calculator__input_blue" type="number" readonly="readonly">
           </div>
 
           <div class="clearance-calculator__line">
             <span class="clearance-calculator__line-name">h (мм)</span>
-            <input id="oldHeightOutput" class="clearance-calculator__input" type="text" readonly="readonly">
-            <input id="newHeightOutput" class="clearance-calculator__input" type="text" readonly="readonly">
-            <input id="differenceHeightOutput" class="clearance-calculator__input  clearance-calculator__input_blue" type="text" readonly="readonly">
+            <input id="oldHeight" class="clearance-calculator__input" type="number" readonly="readonly">
+            <input id="newHeight" class="clearance-calculator__input" type="number" readonly="readonly">
+            <input id="differenceHeight" class="clearance-calculator__input  clearance-calculator__input_blue" type="number" readonly="readonly">
           </div>
 
           <div class="clearance-calculator__line">
             <span class="clearance-calculator__line-name  clearance-calculator__clearance-changes">Изменение клиренса (мм)</span>
-            <input id="clearance" class="clearance-calculator__input  clearance-calculator__input_blue" type="text" readonly="readonly">
+            <input id="clearance" class="clearance-calculator__input  clearance-calculator__input_blue" type="number" readonly="readonly">
           </div>
 
           <div class="btn-wrapper">
@@ -127,9 +127,9 @@
         <span class="bottom-calculator__header_name  bottom-calculator__header_real">Реальная скорость</span>
         <span class="bottom-calculator__header_name  bottom-calculator__header_difference">Разница</span>
       </div>
-      <input id="speedometerValue" value="90" type="number" class="bottom-calculator__input bottom-calculator__input_indication">
-      <input id="speedometerTrueValue" type="text" class="bottom-calculator__input  bottom-calculator__input_real" readonly="readonly">
-      <input id="speedometerDifference" type="text" class="bottom-calculator__input  bottom-calculator__input_difference  bottom-calculator__input_blue" readonly="readonly">
+      <input id="speedometer" value="90" type="number" class="bottom-calculator__input bottom-calculator__input_indication">
+      <input id="speedometerTrue" type="number" class="bottom-calculator__input  bottom-calculator__input_real" readonly="readonly">
+      <input id="speedometerDifference" type="number" class="bottom-calculator__input  bottom-calculator__input_difference  bottom-calculator__input_blue" readonly="readonly">
     </div>
   </div>
 
