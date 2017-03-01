@@ -93,14 +93,14 @@ input [type='number'] {
     color: #262626;
     background: resolve(arrow.png) 88% 50% no-repeat;
     appearance: none;
-  }
+    }
 
   &__select::-ms-expand {
     display: none;
   }
 
   &__row_old-size,
-&__row_new-size {
+  &__row_new-size {
     vertical-align: middle;
   }
 
