@@ -12,8 +12,7 @@ body {
 
 input {
   size: 63px 21px;
-  background: #ebebeb;
-  color: #464646;
+  color: #464646 #ebebeb;
   font: 1rem 'ProximaNovaLight';
   text-align: right;
   border: none;
@@ -196,8 +195,7 @@ input [type='number'] {
 }
 
 .btn {
-  background: #272725;
-  color: #fff;
+  color: #fff #272725;
   border-radius: 3px;
   transition: 400ms;
   border: 1px;
@@ -251,8 +249,7 @@ input [type='number'] {
   }
 
   .logo__png {
-    width: 246px;
-    height: 75px;
+    size: 246px 75px;
   }
 
   .header {
@@ -272,8 +269,7 @@ input [type='number'] {
   }
 
   .logo__png {
-    width: 197px;
-    height: 60px;
+    size: 197px 60px;
   }
 
   .header {
