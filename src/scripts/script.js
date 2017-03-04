@@ -155,3 +155,11 @@ var calculateModule = (function () {
 })();
 
 calculateModule.init();
+
+
+calcBtn.onclick = function() {
+  if (document.getElementById('speedometer').value == "" || document.getElementById('speedometer').value < 0) {
+    alert("Введите скорость!");
+    return false;
+  };
+};
