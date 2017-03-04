@@ -23,6 +23,7 @@
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.4.1"
   },
   "dependencies": {
