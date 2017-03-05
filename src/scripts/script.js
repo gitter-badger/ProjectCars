@@ -52,23 +52,23 @@ var calculateModule = (function () {
 
   function _getDataFromUser(tiresData) {
 
-    var _oldWidthSelect = document.getElementById('oldWidthSelect');
-    var _oldSidewallSelect = document.getElementById('oldSidewallSelect');
-    var _oldInnerDiameterSelect = document.getElementById('oldInnerDiameterSelect');
+    var _oldSizeWidth = document.getElementById('oldSizeWidth');
+    var _oldSizeSidewall = document.getElementById('oldSizeSidewall');
+    var _oldSizeInnerDiameter = document.getElementById('oldSizeInnerDiameter');
 
-    var _newWidthSelect = document.getElementById('newWidthSelect');
-    var _newSidewallSelect = document.getElementById('newSidewallSelect');
-    var _newInnerDiameterSelect = document.getElementById('newInnerDiameterSelect');
+    var _newSizeWidth = document.getElementById('newSizeWidth');
+    var _newSizeSidewall = document.getElementById('newSizeSidewall');
+    var _newSizeInnerDiameter = document.getElementById('newSizeInnerDiameter');
 
     var _speedometer = document.getElementById('speedometer');
 
-    tiresData.oldData.width = _oldWidthSelect.options[_oldWidthSelect.selectedIndex].value;
-    tiresData.oldData.sidewall = _oldSidewallSelect.options[_oldSidewallSelect.selectedIndex].value;
-    tiresData.oldData.diameters.inner = _getInnerDiameter(_oldInnerDiameterSelect);
+    tiresData.oldData.width = _oldSizeWidth.options[_oldSizeWidth.selectedIndex].value;
+    tiresData.oldData.sidewall = _oldSizeSidewall.options[_oldSizeSidewall.selectedIndex].value;
+    tiresData.oldData.diameters.inner = _getInnerDiameter(_oldSizeInnerDiameter);
 
-    tiresData.newData.width = _newWidthSelect.options[_newWidthSelect.selectedIndex].value;
-    tiresData.newData.sidewall = _newSidewallSelect.options[_newSidewallSelect.selectedIndex].value;
-    tiresData.newData.diameters.inner = _getInnerDiameter(_newInnerDiameterSelect);
+    tiresData.newData.width = _newSizeWidth.options[_newSizeWidth.selectedIndex].value;
+    tiresData.newData.sidewall = _newSizeSidewall.options[_newSizeSidewall.selectedIndex].value;
+    tiresData.newData.diameters.inner = _getInnerDiameter(_newSizeInnerDiameter);
 
     tiresData.oldData.speedometer = _speedometer.value;
   }
@@ -138,15 +138,15 @@ var calculateModule = (function () {
 
   function _getHeight(outerDiameter, innerDiameter) {
     return (outerDiameter.value - innerDiameter.value) / 2;
-  }
+  };
 
   function _getDifference(oldValue, newValue) {
     return oldValue.value - newValue.value;
-  }
+  };
 
   function _getSpeed(tiresData) {
     return Math.round(tiresData.oldData.speedometer / ((tiresData.oldData.width * (tiresData.oldData.sidewall / 100) + Number(tiresData.oldData.diameters.inner)) / (tiresData.newData.width * (tiresData.newData.sidewall / 100) + Number(tiresData.newData.diameters.inner))));
-  }
+  };
 
   return {
     init: _init
@@ -154,4 +154,6 @@ var calculateModule = (function () {
 
 })();
 
-calculateModule.init();
+if (button && document.querySelector('[data-module="calculator"]')) {
+  calculateModule.init();
+}
