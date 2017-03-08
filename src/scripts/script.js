@@ -1,4 +1,4 @@
-var button = document.getElementById('calcBtn');
+var form = document.getElementById('select-size');
 
 var calculateModule = (function () {
 
@@ -7,7 +7,8 @@ var calculateModule = (function () {
   };
 
   var _eventListeners = function () {
-    button.addEventListener('click', _calculate)
+    window.addEventListener('load', _calculate);
+    form.addEventListener('change', _calculate);
   };
 
   var _tiresData = {
@@ -154,6 +155,6 @@ var calculateModule = (function () {
 
 })();
 
-if (button && document.querySelector('[data-module="calculator"]')) {
+if (form && document.querySelector('[data-module="calculator"]')) {
   calculateModule.init();
 }

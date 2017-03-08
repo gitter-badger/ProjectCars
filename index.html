@@ -22,49 +22,51 @@
   </header>
 
   <div class="container container_main-block" data-module="calculator">
-    <div class="top-calculator">
-      <div class="top-calculator__row">
-        <span class="top-calculator__row_old-size">Старый размер:</span>
-        <select id="oldSizeWidth" class="top-calculator__select  top-calculator__select_old-width" name="old-width">
-          <option class="top-calculator__select-option_old-width" value="175">175</option>
-          <option class="top-calculator__select-option_old-width" value="185">185</option>
-          <option class="top-calculator__select-option_old-width" value="195">195</option>
-        </select>
+    <form action="" id="select-size">
+      <div class="top-calculator">
+        <div class="top-calculator__row">
+          <span class="top-calculator__row_old-size">Старый размер:</span>
+          <select id="oldSizeWidth" class="top-calculator__select  top-calculator__select_old-width" name="old-width">
+            <option class="top-calculator__select-option_old-width" value="175">175</option>
+            <option class="top-calculator__select-option_old-width" value="185">185</option>
+            <option class="top-calculator__select-option_old-width" value="195">195</option>
+          </select>
 
-        <select id="oldSizeSidewall" class="top-calculator__select  top-calculator__select_old-height" name="old-height">
-          <option class="top-calculator__select-option_old-height" value="70">70</option>
-          <option class="top-calculator__select-option_old-height" value="65">65</option>
-          <option class="top-calculator__select-option_old-height" value="60">60</option>
-        </select>
+          <select id="oldSizeSidewall" class="top-calculator__select  top-calculator__select_old-height" name="old-height">
+            <option class="top-calculator__select-option_old-height" value="70">70</option>
+            <option class="top-calculator__select-option_old-height" value="65">65</option>
+            <option class="top-calculator__select-option_old-height" value="60">60</option>
+          </select>
 
-        <select id="oldSizeInnerDiameter" class="top-calculator__select  top-calculator__select_old-radius" name="old-radius">
-          <option class="top-calculator__select-option_old-radius" value="13">R13</option>
-          <option class="top-calculator__select-option_old-radius" value="14">R14</option>
-          <option class="top-calculator__select-option_old-radius" value="15">R15</option>
-        </select>
+          <select id="oldSizeInnerDiameter" class="top-calculator__select  top-calculator__select_old-radius" name="old-radius">
+            <option class="top-calculator__select-option_old-radius" value="13">R13</option>
+            <option class="top-calculator__select-option_old-radius" value="14">R14</option>
+            <option class="top-calculator__select-option_old-radius" value="15">R15</option>
+          </select>
+        </div>
+
+        <div class="top-calculator__row">
+          <span class="top-calculator__row_new-size">Новый размер:</span>
+          <select id="newSizeWidth" class="top-calculator__select  top-calculator__select_new-width" name="new-width">
+            <option class="top-calculator__select-option_new-width" value="175">175</option>
+            <option class="top-calculator__select-option_new-width" value="185">185</option>
+            <option class="top-calculator__select-option_new-width" value="195">195</option>
+          </select>
+
+          <select id="newSizeSidewall" class="top-calculator__select  top-calculator__select_new-height" name="new-height">
+            <option class="top-calculator__select-option_new-height" value="70">70</option>
+            <option class="top-calculator__select-option_new-height" value="65">65</option>
+            <option class="top-calculator__select-option_new-height" value="60">60</option>
+          </select>
+
+          <select id="newSizeInnerDiameter" class="top-calculator__select  top-calculator__select_new-radius" name="new-radius">
+            <option class="top-calculator__select-option_new-radius" value="13">R13</option>
+            <option class="top-calculator__select-option_new-radius" value="14">R14</option>
+            <option class="top-calculator__select-option_new-radius" value="15">R15</option>
+          </select>
+        </div>
       </div>
-
-      <div class="top-calculator__row">
-        <span class="top-calculator__row_new-size">Новый размер:</span>
-        <select id="newSizeWidth" class="top-calculator__select  top-calculator__select_new-width" name="new-width">
-          <option class="top-calculator__select-option_new-width" value="175">175</option>
-          <option class="top-calculator__select-option_new-width" value="185">185</option>
-          <option class="top-calculator__select-option_new-width" value="195">195</option>
-        </select>
-
-        <select id="newSizeSidewall" class="top-calculator__select  top-calculator__select_new-height" name="new-height">
-          <option class="top-calculator__select-option_new-height" value="70">70</option>
-          <option class="top-calculator__select-option_new-height" value="65">65</option>
-          <option class="top-calculator__select-option_new-height" value="60">60</option>
-        </select>
-
-        <select id="newSizeInnerDiameter" class="top-calculator__select  top-calculator__select_new-radius" name="new-radius">
-          <option class="top-calculator__select-option_new-radius" value="13">R13</option>
-          <option class="top-calculator__select-option_new-radius" value="14">R14</option>
-          <option class="top-calculator__select-option_new-radius" value="15">R15</option>
-        </select>
-      </div>
-    </div>
+    </form>
 
     <div class="clearance-calculator">
       <div class="clearance-calculator__header  clearance-calculator__header_blue-line">
@@ -109,9 +111,9 @@
             <input id="clearance" class="clearance-calculator__input  clearance-calculator__input_blue" type="number" readonly="readonly">
           </div>
 
-          <div class="btn-wrapper">
-            <button class="btn" id="calcBtn">Рассчитать</button>
-          </div>
+          <!--<div class="btn-wrapper">-->
+            <!--<button class="btn" id="calcBtn">Рассчитать</button>-->
+          <!--</div>-->
         </div>
 
         <div class="clearance-calculator__content_right">
