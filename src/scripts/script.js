@@ -42,13 +42,9 @@ var calculateModule = (function () {
       speedometer: 0
     }
   };
-
   function _calculate () {
-
     _getDataFromUser(_tiresData);
-
-    _pushDataToInputs(_tiresData);
-
+    _pushData(_tiresData);
   };
 
   function _getDataFromUser(tiresData) {
@@ -72,9 +68,9 @@ var calculateModule = (function () {
     tiresData.newData.diameters.inner = _getInnerDiameter(_newSizeInnerDiameter);
 
     tiresData.oldData.speedometer = _speedometer.value;
-  }
+  };
   
-  function _pushDataToInputs(tiresData) {
+  function _pushData(tiresData) {
 
     var _oldWidth = document.getElementById('oldWidth');
     var _newWidth = document.getElementById('newWidth');
@@ -127,7 +123,7 @@ var calculateModule = (function () {
     _speedometerTrue.value = tiresData.newData.speedometer;
 
     _speedometerDifference.value = tiresData.oldData.speedometer - tiresData.newData.speedometer;
-  }
+  };
 
   function _getInnerDiameter(diameter) {
     return Math.round(diameter.options[diameter.selectedIndex].value * 25.4);
