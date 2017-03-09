@@ -32,7 +32,7 @@ appearance: none;
 }
 
 .header {
-  background: url(../../src/img/background.jpg)  no-repeat 0% 50% / cover;
+  background: url(../assets/background.jpg)  no-repeat 0% 50% / cover;
   height: 843px;
   margin: 0 0 5%;
 }
@@ -93,7 +93,7 @@ appearance: none;
   height: 40px;
   font: .9375rem 'ProximaNovaLight';
   color: #262626;
-  background: url('../../src/img/arrow.png') 88% 50% no-repeat;
+  background: url('../assets/arrow.png') 88% 50% no-repeat;
   appearance: none;
 }
 
@@ -194,7 +194,7 @@ display: none;
 }
 
 .clearance-calculator__right-img {
-	background: url(../../src/img/tire.png) no-repeat;
+	background: url(../assets/tire.png) no-repeat;
 	width: 345px;
 	height: 310px;
 }

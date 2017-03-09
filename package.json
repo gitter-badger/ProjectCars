@@ -18,7 +18,9 @@
   "homepage": "https://github.com/WebSpecialForces/ProjectCars#readme",
   "devDependencies": {
     "autoprefixer": "^6.7.4",
+    "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^3.0.3",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-concat": "^2.6.1",
